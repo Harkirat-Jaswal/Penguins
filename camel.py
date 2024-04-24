@@ -4,11 +4,6 @@ import random
 import time
 import os
 
-def saveData():
-    with open('saver.txt', 'w') as file:
-        for task in taskList:
-            file.write(f"task = {task}\n")
-
 # Variables ----------------------------------------------------------------------------------
 
 startedJourney = True
