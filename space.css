@@ -2,7 +2,12 @@ body{
     background-image: url('space.jpg');
 }
 
-.planets{
+.title{
+    text-align: center;
     color: white;
-    margin: auto;
+}
+
+.main{
+    color: white;
+    text-align: center;
 }
