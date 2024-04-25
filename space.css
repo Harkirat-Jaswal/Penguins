@@ -1,9 +1,14 @@
-
+body{
+    background-image:"url(system1.jpg)";
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 
 
 .title{
     text-align: center;
     color: white;
+    font-size:50px ;
 }
 
 .main{
