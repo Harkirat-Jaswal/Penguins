@@ -11,24 +11,45 @@
 <h1>
 The Solar System
 </h1>
-    
+    </div>
 
     <script>
         function Adult(){
             document.body.style.backgroundImage="url(system1.jpg)";
+            document.getElementById("textBackground").style.backgroundColor="black";
         }
 
         function Child(){
             document.body.style.backgroundImage="url(system2.jpg)";
+            document.getElementById("textBackground").style.backgroundColor="#8A2BE2";
         }
-    
+
+        function fontInc(){
+                document.body.style.fontSize="25px";
+            }
+
+            function fontDec(){
+                document.body.style.fontSize="10px";
+            }
+
+            function fontBase(){
+                document.body.style.fontSize="16px";
+            }
 
     </script>
+    <div class="buttons">
         <button type="button" onclick="Adult()">Adult</button>
         <button type="button" onclick="Child()">Child</button>
-    </div>
-
-    <div class="main">
+        <p class="thing">
+            FONT
+            </p>
+            <p>
+        <button type="button" onclick="fontInc()">+</button>
+        <button type="button" onclick="fontBase()">Default</button>
+        <button type="button" onclick="fontDec()">-</button>
+        </p>
+</div>
+    <div id="textBackground" class="main">
         The Solar System is about 4.568 billion years old.
          The Sun was formed by gravity pulling in many molecules.
           It is mainly made of hydrogen, which it converts into helium through nuclear fusion.

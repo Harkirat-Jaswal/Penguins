@@ -16,4 +16,20 @@ body{
     text-align: center;
     margin: auto;
     width: 400px;
+    background-color: black;
+    padding: 10px;
+    text-indent: 50px;
+    line-height: 1.5;
+    text-align: justify;
+}
+
+
+.buttons
+{
+    text-align: center;
+}
+
+.thing
+{
+    color: white;
 }
