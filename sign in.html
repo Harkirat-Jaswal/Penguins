@@ -3,16 +3,15 @@
         <title>
             Sign In
         </title>
-    </head>
-
-    <script>
-        function msg (){
-            const input_name=document.getElementById("name");
-            const n=input_name.value;
-            const mssg=n.contact("you have been succesfully registered");
-            document.getElementById("showMsg").innerHTML=mssg;
-        }
-    </script>
+        
+        <script>
+            function Msg() {
+                const input_name=document.getElementById('Name');
+                const n=input_name.value;
+                const mssg=n.concat('you have been succesfully registered');
+                document.getElementById('showMsg').innerHTML=mssg;
+            }
+        </script>
 
     <style>
         .txtIn{
@@ -36,6 +35,7 @@
             font-size: 20px;
         }
     </style>
+    </head>
 
     <body>
         <div class="forForm">
@@ -45,26 +45,26 @@
             <form>
                 <label> Enter Your Name</label>
                 <br>
-                <input type="text" value="" id="Name">
+                <input value="Enter Name" class="txtIn">
                 <br>
                 <label>
                     Username:
                 </label>
                 <br>
-                <input type="Username" value="Enter Username" class="txtIn">
+                <input value="Enter Username" class="txtIn">
                 <br>
                 <label>
                     Password:
                 </label>
                 <br>
-                <input type="Password" value="Enter Username" class="txtIn">
+                <input type="Password" value="Enter Password" class="txtIn">
                 <br>
+
                 <label>
                     Select One Opition:
                 </label>
                 <br>
-                <input type="Radio" name="travel">
-                <br><label>
+                <label>
                     I Have A Bike
                 </label>
                 <br>
@@ -80,6 +80,7 @@
                 <br>
                 <input type="Radio" name="travel">
                 <br>
+
                 <br>
                 <label>
                     When Will You Travel:
@@ -108,6 +109,20 @@
                         Sunday
                     </option>
                 </select>
+
+                <br>
+                <input type="checkbox">
+                <label>
+                    I Agree With Terms and Services.
+                </label>
+                <br>
+
+                <br>
+                <input type="Reset" value="Reset">
+                <input type="button" value="Submit" onclick="Msg()">
+                </form>
+                <p id="showMsg">
+                </p>
         </div>
     </body>
 </html>
