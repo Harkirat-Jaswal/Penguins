@@ -1,0 +1,64 @@
+
+body {
+background-color: #73833b86;
+margin: 0px;
+}
+
+.head
+{
+font-size: 20px;
+display: inline-block;
+margin: 0px 30pc 0px 30pc;
+}
+
+
+.text
+{
+color: white;
+text-shadow: 3px 3px 5px rgb(0, 0, 0);
+margin: 0px 60px 0px 60px;
+display: inline-block;
+}
+
+.logo
+{
+width: 20%;
+display: inline-block;
+vertical-align: middle;
+padding-top: 10px;
+}
+
+
+.nav ul
+{
+list-style-type: none;
+background-color: #c8d363b7;
+overflow: hidden;
+position: sticky;
+}
+
+.nav a
+{
+text-shadow: 3px 3px 5px rgb(0, 0, 0);
+color: rgb(255, 255, 255);
+text-decoration: none;
+padding: 15px;
+display: block;
+text-align: center;
+}
+
+.nav a:hover
+{
+background-color: #73833b86;
+}
+
+.nav li
+{
+float: left;
+}
+
+.homepagebody{
+    text-indent: 50px;
+    margin: auto;
+    width: 700px;
+}
