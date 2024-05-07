@@ -11,7 +11,6 @@ display: inline-block;
 margin: 0px 30pc 0px 30pc;
 }
 
-
 .text
 {
 color: white;
@@ -27,7 +26,6 @@ display: inline-block;
 vertical-align: middle;
 padding-top: 10px;
 }
-
 
 .nav ul
 {
@@ -50,15 +48,28 @@ text-align: center;
 .nav a:hover
 {
 background-color: #73833b86;
+font-weight: bold;
 }
 
-.nav li
+.nav li,a
 {
 float: left;
+font-weight: 100;
 }
 
 .homepagebody{
     text-indent: 50px;
     margin: auto;
     width: 700px;
+}
+
+.timelinebody{
+    text-indent: 50px;
+    margin: auto;
+    width: 700px;
+}
+
+.buttons
+{
+    text-align: center;
 }
