@@ -1,0 +1,71 @@
+<html>
+    <head>
+        <tittle>
+            Caculator
+        </tittle>
+    </head>
+    <script>
+
+function findSum(){
+
+var num1=parseFloat(document.getElementById("n1").value);
+
+var num2=parseFloat(document.getElementById("n2").value);
+
+num3=num1+num2;
+num4=num1-num2;
+num5=num1*num2;
+num6=num1/num2;
+
+document.getElementById("ans").innerHTML=num3;
+document.getElementById("ans").innerHTML=num4;
+document.getElementById("ans").innerHTML=num5;
+document.getElementById("ans").innerHTML=num6;
+}
+</script>
+
+
+<body>
+
+<h1>
+Calulator
+</h1>
+
+Enter first number:
+<input type="text" id="n1"><br><br>
+
+Enter second number:
+<input type="text" id="n2"><br><br>
+
+<input type="button" value="Add" onclick="findSum()">
+<label> Your answer is: </label>
+<label id="ans"></label>
+
+<br>
+<input type="button" value="Add" onclick="findSum()">
+<label> Your answer is: </label>
+<label id="ans"></label>
+
+<br>
+<input type="button" value="Add" onclick="findSum()">
+<label> Your answer is: </label>
+<label id="ans"></label>
+
+<br>
+<input type="button" value="Add" onclick="findSum()">
+<label> Your answer is: </label>
+<label id="ans"></label>
+
+<style>
+
+body {
+background-color: lightblue;
+}
+</style>
+</body>
+</html>
+
+
+
+    </body>
+</html>
