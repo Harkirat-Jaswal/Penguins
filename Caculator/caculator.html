@@ -15,9 +15,13 @@ var num1=parseFloat(document.getElementById("n1").value);
 
 var num2=parseFloat(document.getElementById("n2").value);
 
-num3=num1+num2;
+var num3=num1 + num2;
 
-document.getElementById("ans").innerHTML=num3;
+if (isNaN(num3)) {
+    document.getElementById("ans").innerHTML="Nuh Uh";
+} else {
+    document.getElementById("ans").innerHTML=num3;
+}
 }
 
 function findSum2(){
@@ -26,9 +30,13 @@ var num1=parseFloat(document.getElementById("n1").value);
 
 var num2=parseFloat(document.getElementById("n2").value);
 
-num4=num1-num2;
+var num3=num1 - num2;
 
-document.getElementById("ans").innerHTML=num4;
+if (isNaN(num3)) {
+    document.getElementById("ans").innerHTML="Nuh Uh";
+} else {
+    document.getElementById("ans").innerHTML=num3;
+}
 }
 
 function findSum3(){
@@ -37,9 +45,13 @@ var num1=parseFloat(document.getElementById("n1").value);
 
 var num2=parseFloat(document.getElementById("n2").value);
 
-num5=num1*num2;
+var num3=num1 * num2;
 
-document.getElementById("ans").innerHTML=num5;
+if (isNaN(num3)) {
+    document.getElementById("ans").innerHTML="Nuh Uh";
+} else {
+    document.getElementById("ans").innerHTML=num3;
+}
 }
 
 function findSum4(){
@@ -48,9 +60,15 @@ var num1=parseFloat(document.getElementById("n1").value);
 
 var num2=parseFloat(document.getElementById("n2").value);
 
-num6=num1/num2;
+var num3=num1/num2;
 
-document.getElementById("ans").innerHTML=num6;
+if (isNaN(num3)) {
+    document.getElementById("ans").innerHTML="Nuh Uh";
+} else {
+    document.getElementById("ans").innerHTML=num3;
+}
+
+
 }
 
 function findSum5(){
