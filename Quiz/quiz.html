@@ -1,0 +1,91 @@
+<html>
+    <head>
+        <title>
+            HTML Quiz
+        </title>
+    </head>
+
+<script> let score=0;
+
+function check1(){
+
+if(document.getElementById ("a1").checked==true){
+
+document.getElementById("msg1").innerHTML="Wrong Answer" ;}
+
+if(document.getElementById("b1" ).checked==true){
+
+document.getElementById("msg1").innerHTML="Wrong Answer";}
+
+if(document.getElementById ("c1").checked==true){
+
+document.getElementById("msg1").innerHTML="Congratulation! Correct Answer"; scorett;
+
+document.getElementById("score"). innerHTML=score;}
+
+if(document.getElementById ("d1") .checked==true){
+
+document.getElementById("msg1").innerHTML="Wrong Answer" ;}
+
+}
+
+function check2 ()
+
+if(document.getElementById("a2") .checked==true){
+
+document.getElementById("msg2").innerHTML="Congratulation! Correct Answer"; scorett;
+
+document.getElementById("score").innerHTML=score;}
+
+if(document.getElementById("b2") .checked==true){
+
+document.getElementById("msg2").innerHTML="Wrong Answer";}
+
+if(document.getElementById("2"). checked==true){
+
+document.getElementById("msg2").innerHTML="Wrong Answer";}
+
+if(document.getElementById ("d2").checked==true){
+
+document.getElementById("msg2").innerHTML="Wrong Answer"; }
+
+</script>
+
+<body>
+
+Quiz <br>
+
+Select the correct option. <br><br>
+
+<br>
+
+<br>
+
+1. What is the capital of Canada? <br>
+
+<input type="radio" name="Q1" id="a1" value="t">Toronto<br> <input type="radio" name="Q1" id="b1" value="v">Vancouver<br>
+
+<input type="radio" name="Q1" id="c1" value="o">Ottawa<br>
+
+<input type="radio" name="Q1" id="d1" value="n">Nova Scotia<br>
+
+<input type="button" value="submit" onclick="check1()">
+
+<label id="msg1"></label><br>
+
+<br>
+
+<br>
+
+2. How many planets do we have in our solar system?<br> <input type="radio" name="Q2" id="a2">Eight<br> <input type="radio" name="Q2" id="b2">Nine<br> <input type="radio" name="Q2" id="c2">Seven<br> <input type="radio" name="Q2" id="d2">Six<br>
+
+<input type="button" value="submit" onclick="check2()">
+
+<label id="msg2"></label><br><br><br><br>
+
+<label > Your Final Score is: </label >
+
+<label id="score"></label>
+
+</body> </html>
+</html>
