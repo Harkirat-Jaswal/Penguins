@@ -5,7 +5,9 @@
         </title>
     </head>
 
-<script> let score=0;
+<script> 
+
+let score=0;
 
 function check1(){
 
@@ -19,7 +21,7 @@ document.getElementById("msg1").innerHTML="Wrong Answer";}
 
 if(document.getElementById ("c1").checked==true){
 
-document.getElementById("msg1").innerHTML="Congratulation! Correct Answer"; scorett;
+document.getElementById("msg1").innerHTML="Congratulation! Correct Answer"; score++;
 
 document.getElementById("score"). innerHTML=score;}
 
@@ -29,25 +31,27 @@ document.getElementById("msg1").innerHTML="Wrong Answer" ;}
 
 }
 
-function check2 ()
+function check2 () {
 
-if(document.getElementById("a2") .checked==true){
+if(document.getElementById ("a2").checked==true){
 
-document.getElementById("msg2").innerHTML="Congratulation! Correct Answer"; scorett;
+document.getElementById("msg2").innerHTML="Wrong Answer" ;}
 
-document.getElementById("score").innerHTML=score;}
-
-if(document.getElementById("b2") .checked==true){
+if(document.getElementById("b2" ).checked==true){
 
 document.getElementById("msg2").innerHTML="Wrong Answer";}
 
-if(document.getElementById("2"). checked==true){
+if(document.getElementById ("c2").checked==true){
 
-document.getElementById("msg2").innerHTML="Wrong Answer";}
+document.getElementById("msg2").innerHTML="Congratulation! Correct Answer"; score++;
 
-if(document.getElementById ("d2").checked==true){
+document.getElementById("score"). innerHTML=score;}
 
-document.getElementById("msg2").innerHTML="Wrong Answer"; }
+if(document.getElementById ("d2") .checked==true){
+
+document.getElementById("msg2").innerHTML="Wrong Answer" ;}
+
+}
 
 </script>
 
@@ -63,7 +67,9 @@ Select the correct option. <br><br>
 
 1. What is the capital of Canada? <br>
 
-<input type="radio" name="Q1" id="a1" value="t">Toronto<br> <input type="radio" name="Q1" id="b1" value="v">Vancouver<br>
+<input type="radio" name="Q1" id="a1" value="t">Toronto<br> 
+
+<input type="radio" name="Q1" id="b1" value="v">Vancouver<br>
 
 <input type="radio" name="Q1" id="c1" value="o">Ottawa<br>
 
@@ -77,13 +83,355 @@ Select the correct option. <br><br>
 
 <br>
 
-2. How many planets do we have in our solar system?<br> <input type="radio" name="Q2" id="a2">Eight<br> <input type="radio" name="Q2" id="b2">Nine<br> <input type="radio" name="Q2" id="c2">Seven<br> <input type="radio" name="Q2" id="d2">Six<br>
+2. How many planets do we have in our solar system?<br>
+<input type="radio" name="Q2" id="a2">Seven<br> 
+
+<input type="radio" name="Q2" id="b2">Nine<br> 
+
+<input type="radio" name="Q2" id="c2">Eight<br> 
+
+<input type="radio" name="Q2" id="d2">Six<br>
 
 <input type="button" value="submit" onclick="check2()">
 
-<label id="msg2"></label><br><br><br><br>
+<label id="msg2"></label><br>
 
-<label > Your Final Score is: </label >
+<br>
+
+<br>
+
+3. How many planets do we have in our solar system?<br>
+<input type="radio" name="Q3" id="a3">Seven<br> 
+
+<input type="radio" name="Q3" id="b3">Nine<br> 
+
+<input type="radio" name="Q3" id="c3">Eight<br> 
+
+<input type="radio" name="Q3" id="d3">Six<br>
+
+<input type="button" value="submit" onclick="check3()">
+
+<label id="msg3"></label><br>
+
+<br>
+
+<br>
+
+4. How many planets do we have in our solar system?<br>
+<input type="radio" name="Q4" id="a4">Seven<br> 
+
+<input type="radio" name="Q4" id="b4">Nine<br> 
+
+<input type="radio" name="Q4" id="c4">Eight<br> 
+
+<input type="radio" name="Q4" id="d4">Six<br>
+
+<input type="button" value="submit" onclick="check4()">
+
+<label id="msg4"></label><br>
+
+<br>
+
+<br>
+
+5. How many planets do we have in our solar system?<br>
+<input type="radio" name="Q5" id="a5">Seven<br> 
+
+<input type="radio" name="Q5" id="b5">Nine<br> 
+
+<input type="radio" name="Q5" id="c5">Eight<br> 
+
+<input type="radio" name="Q5" id="d5">Six<br>
+
+<input type="button" value="submit" onclick="check5()">
+
+<label id="msg5"></label><br>
+
+<br>
+
+<br>
+
+6. How many planets do we have in our solar system?<br>
+<input type="radio" name="Q6" id="a6">Seven<br> 
+
+<input type="radio" name="Q6" id="b6">Nine<br> 
+
+<input type="radio" name="Q6" id="c6">Eight<br> 
+
+<input type="radio" name="Q6" id="d6">Six<br>
+
+<input type="button" value="submit" onclick="check6()">
+
+<label id="msg6"></label><br>
+
+<br>
+
+<br>
+
+7. How many planets do we have in our solar system?<br>
+<input type="radio" name="Q7" id="a7">Seven<br> 
+
+<input type="radio" name="Q7" id="b7">Nine<br> 
+
+<input type="radio" name="Q7" id="c7">Eight<br> 
+
+<input type="radio" name="Q7" id="d7">Six<br>
+
+<input type="button" value="submit" onclick="check7()">
+
+<label id="msg7"></label><br>
+
+<br>
+
+<br>
+
+8. How many planets do we have in our solar system?<br>
+<input type="radio" name="Q8" id="a8">Seven<br> 
+
+<input type="radio" name="Q8" id="b8">Nine<br> 
+
+<input type="radio" name="Q8" id="c8">Eight<br> 
+
+<input type="radio" name="Q8" id="d8">Six<br>
+
+<input type="button" value="submit" onclick="check8()">
+
+<label id="msg8"></label><br>
+
+<br>
+
+<br>
+
+9. How many planets do we have in our solar system?<br>
+<input type="radio" name="Q9" id="a9">Seven<br> 
+
+<input type="radio" name="Q9" id="b9">Nine<br> 
+
+<input type="radio" name="Q9" id="c9">Eight<br> 
+
+<input type="radio" name="Q9" id="d9">Six<br>
+
+<input type="button" value="submit" onclick="check9()">
+
+<label id="msg9"></label><br>
+
+<br>
+
+<br>
+
+10. How many planets do we have in our solar system?<br>
+<input type="radio" name="Q10" id="a10">Seven<br> 
+
+<input type="radio" name="Q10" id="b10">Nine<br> 
+
+<input type="radio" name="Q10" id="c10">Eight<br> 
+
+<input type="radio" name="Q10" id="d10">Six<br>
+
+<input type="button" value="submit" onclick="check10()">
+
+<label id="msg10"></label><br>
+
+<br>
+
+<br>
+
+11. How many planets do we have in our solar system?<br>
+<input type="radio" name="Q11" id="a11">Seven<br> 
+
+<input type="radio" name="Q11" id="b11">Nine<br> 
+
+<input type="radio" name="Q11" id="c11">Eight<br> 
+
+<input type="radio" name="Q11" id="d11">Six<br>
+
+<input type="button" value="submit" onclick="check11()">
+
+<label id="msg11"></label><br>
+
+<br>
+
+<br>
+
+12. How many planets do we have in our solar system?<br>
+<input type="radio" name="Q12" id="a12">Seven<br> 
+
+<input type="radio" name="Q12" id="b12">Nine<br> 
+
+<input type="radio" name="Q12" id="c12">Eight<br> 
+
+<input type="radio" name="Q12" id="d12">Six<br>
+
+<input type="button" value="submit" onclick="check12()">
+
+<label id="msg12"></label><br>
+
+<br>
+
+<br>
+
+13. How many planets do we have in our solar system?<br>
+<input type="radio" name="Q13" id="a13">Seven<br> 
+
+<input type="radio" name="Q13" id="b13">Nine<br> 
+
+<input type="radio" name="Q13" id="c13">Eight<br> 
+
+<input type="radio" name="Q13" id="d13">Six<br>
+
+<input type="button" value="submit" onclick="check13()">
+
+<label id="msg13"></label><br>
+
+<br>
+
+<br>
+
+
+14. How many planets do we have in our solar system?<br>
+<input type="radio" name="Q14" id="a14">Seven<br> 
+
+<input type="radio" name="Q14" id="b14">Nine<br> 
+
+<input type="radio" name="Q14" id="c14">Eight<br> 
+
+<input type="radio" name="Q14" id="d14">Six<br>
+
+<input type="button" value="submit" onclick="check14()">
+
+<label id="msg14"></label><br>
+
+<br>
+
+<br>
+
+15. How many planets do we have in our solar system?<br>
+<input type="radio" name="Q15" id="a15">Seven<br> 
+
+<input type="radio" name="Q15" id="b15">Nine<br> 
+
+<input type="radio" name="Q15" id="c15">Eight<br> 
+
+<input type="radio" name="Q15" id="d15">Six<br>
+
+<input type="button" value="submit" onclick="check15()">
+
+<label id="msg15"></label><br>
+
+<br>
+
+<br>
+
+16. How many planets do we have in our solar system?<br>
+<input type="radio" name="Q16" id="a16">Seven<br> 
+
+<input type="radio" name="Q16" id="b16">Nine<br> 
+
+<input type="radio" name="Q16" id="c16">Eight<br> 
+
+<input type="radio" name="Q16" id="d16">Six<br>
+
+<input type="button" value="submit" onclick="check16()">
+
+<label id="msg16"></label><br>
+
+<br>
+
+<br>
+
+17. How many planets do we have in our solar system?<br>
+<input type="radio" name="Q17" id="a17">Seven<br> 
+
+<input type="radio" name="Q17" id="b17">Nine<br> 
+
+<input type="radio" name="Q17" id="c17">Eight<br> 
+
+<input type="radio" name="Q17" id="d17">Six<br>
+
+<input type="button" value="submit" onclick="check17()">
+
+<label id="msg17"></label><br>
+
+<br>
+
+<br>
+
+18. How many planets do we have in our solar system?<br>
+<input type="radio" name="Q18" id="a18">Seven<br> 
+
+<input type="radio" name="Q18" id="b18">Nine<br> 
+
+<input type="radio" name="Q18" id="c18">Eight<br> 
+
+<input type="radio" name="Q18" id="d18">Six<br>
+
+<input type="button" value="submit" onclick="check18()">
+
+<label id="msg18"></label><br>
+
+<br>
+
+<br>
+
+19. How many planets do we have in our solar system?<br>
+<input type="radio" name="Q19" id="a19">Seven<br> 
+
+<input type="radio" name="Q19" id="b19">Nine<br> 
+
+<input type="radio" name="Q19" id="c19">Eight<br> 
+
+<input type="radio" name="Q19" id="d19">Six<br>
+
+<input type="button" value="submit" onclick="check19()">
+
+<label id="msg19"></label><br>
+
+<br>
+
+<br>
+
+20. How many planets do we have in our solar system?<br>
+<input type="radio" name="Q20" id="a20">Seven<br> 
+
+<input type="radio" name="Q20" id="b20">Nine<br> 
+
+<input type="radio" name="Q20" id="c20">Eight<br> 
+
+<input type="radio" name="Q20" id="d20">Six<br>
+
+<input type="button" value="submit" onclick="check20()">
+
+<label id="msg20"></label><br>
+
+<br>
+
+<br>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<br>
+
+<label> Your Final Score is: </label >
 
 <label id="score"></label>
 
