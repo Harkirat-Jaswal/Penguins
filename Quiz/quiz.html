@@ -385,13 +385,25 @@ document.getElementById("score"). innerHTML=score;}
 
 }
 
+function fname(){
+
+    let a = document.getElementById('fname').value;
+    document.getElementById('ffname').innerText=a;
+}
+
+
+
 </script>
 
 <body>
 
-Quiz <br>
+<h1> HTML and CSS Quiz</h1> <br>
 
-Select the correct option. <br><br>
+      <label for="fname">Insert Full Name:</label>
+      <input type="text" id="fname" name="fname">
+    <br>
+    <input type="submit" onclick="fname()">
+    </form><br><br>
 
 <br>
 
@@ -443,7 +455,7 @@ Select the correct option. <br><br>
 
 <br>
 
-4. < br  / > What type of tag is this?<br>
+4.  br  /  What type of tag is this?<br>
 <input type="radio" name="Q4" id="a4">Break Tag<br> 
 
 <input type="radio" name="Q4" id="b4">A Broken Tag<br> 
@@ -458,7 +470,7 @@ Select the correct option. <br><br>
 
 <br>
 
-5. < body > Is this an opening tag or a closing tag of an HTML element?<br>
+5.  body  Is this an opening tag or a closing tag of an HTML element?<br>
 <input type="radio" name="Q5" id="a5">Opening Tag<br> 
 
 <input type="radio" name="Q5" id="b5">Closing Tag<br> 
@@ -473,7 +485,7 @@ Select the correct option. <br><br>
 
 <br>
 
-6.  < / body > Is this an opening tag or a closing tag of an HTML element?<br>
+6.   / body  Is this an opening tag or a closing tag of an HTML element?<br>
 <input type="radio" name="Q6" id="a6">Opening Tag<br> 
 
 <input type="radio" name="Q6" id="b6">Closing Tag<br> 
@@ -536,9 +548,9 @@ Select the correct option. <br><br>
 10. Which of the following is an example of an empty element in HTML?<br>
 <input type="radio" name="Q10" id="a10">< img / ><br> 
 
-<input type="radio" name="Q10" id="b10">< img > < / img ><br> 
+<input type="radio" name="Q10" id="b10"> img  / img <br> 
 
-<input type="radio" name="Q10" id="c10">< / img><br> 
+<input type="radio" name="Q10" id="c10"> / img<br> 
 
 <input type="button" value="submit" onclick="check10()">
 
@@ -578,7 +590,7 @@ Select the correct option. <br><br>
 
 <br>
 
-13. What does < a  h r e f = ”h t t p : / / w w w . g o o g l e . c o m“  t i t l e = ” L i n k  t o   G o o g l e  ” t a r g e t = ” _  b l a n k  ” > G o o g l e  < / a > do?
+13. What does  a  h r e f = ”h t t p : / / w w w . g o o g l e . c o m“  t i t l e = ” L i n k  t o   G o o g l e  ” t a r g e t = ” _  b l a n k  ” > G o o g l e   / a  do?
 <br>
 <input type="radio" name="Q13" id="a13">Adds a link to the word “Google” on the page<br> 
 
@@ -643,11 +655,11 @@ Select the correct option. <br><br>
 
 17. What is the correct HTML for referring to an external style sheet?
 <br>
-<input type="radio" name="Q17" id="a17">< link rel="stylesheet" type="text/css" href="mystyle.css" >  <br> 
+<input type="radio" name="Q17" id="a17"> link rel="stylesheet" type="text/css" href="mystyle.css"   <br> 
 
-<input type="radio" name="Q17" id="b17"> < style src="mystyle.css" > <br> 
+<input type="radio" name="Q17" id="b17">  style src="mystyle.css"  <br> 
 
-<input type="radio" name="Q17" id="c17"> < stylesheet>mystyle.css< /stylesheet ><br> 
+<input type="radio" name="Q17" id="c17">  stylesheet>mystyle.css / stylesheet <br> 
 
 <input type="button" value="submit" onclick="check17()">
 
@@ -658,9 +670,9 @@ Select the correct option. <br><br>
 <br>
 
 18. Where in an HTML document is the correct place to refer to an external style sheet?<br>
-<input type="radio" name="Q18" id="a18">In the < body > section<br> 
+<input type="radio" name="Q18" id="a18">In the  body  section<br> 
 
-<input type="radio" name="Q18" id="b18">In the < head > section  <br> 
+<input type="radio" name="Q18" id="b18">In the  head  section  <br> 
 
 <input type="radio" name="Q18" id="c18">At the end of the document<br> 
 
@@ -712,21 +724,9 @@ Select the correct option. <br><br>
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
 <br>
-
-<label> Your Final Score is: </label >
+<label id="ffname"></label>
+<label> 's Final Score is: </label >
 
 <label id="score"></label>
 
