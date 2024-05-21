@@ -5,6 +5,10 @@
         </title>
     </head>
 
+    <link rel="stylesheet" href="quiz.css">
+
+
+
 <script> 
 
 let score=0;
@@ -25,6 +29,8 @@ document.getElementById("msg1").innerHTML="Congratulation! Correct Answer"; scor
 
 document.getElementById("score"). innerHTML=score;}
 
+displayGrade();
+
 }
 
 function check2 () {
@@ -42,6 +48,8 @@ if(document.getElementById ("b2").checked==true){
 document.getElementById("msg2").innerHTML="Congratulation! Correct Answer"; score++;
 
 document.getElementById("score"). innerHTML=score;}
+
+displayGrade();
 
 }
 
@@ -61,6 +69,7 @@ document.getElementById("msg3").innerHTML="Congratulation! Correct Answer"; scor
 
 document.getElementById("score"). innerHTML=score;}
 
+displayGrade();
 
 }
 
@@ -80,6 +89,7 @@ document.getElementById("msg4").innerHTML="Congratulation! Correct Answer"; scor
 
 document.getElementById("score"). innerHTML=score;}
 
+displayGrade();
 
 }
 
@@ -99,6 +109,8 @@ document.getElementById("msg5").innerHTML="Congratulation! Correct Answer"; scor
 
 document.getElementById("score"). innerHTML=score;}
 
+displayGrade();
+
 }
 
 function check6 () {
@@ -117,6 +129,7 @@ document.getElementById("msg6").innerHTML="Congratulation! Correct Answer"; scor
 
 document.getElementById("score"). innerHTML=score;}
 
+displayGrade();
 
 }
 
@@ -136,6 +149,7 @@ document.getElementById("msg7").innerHTML="Congratulation! Correct Answer"; scor
 
 document.getElementById("score"). innerHTML=score;}
 
+displayGrade();
 
 }
 
@@ -155,6 +169,7 @@ document.getElementById("msg8").innerHTML="Congratulation! Correct Answer"; scor
 
 document.getElementById("score"). innerHTML=score;}
 
+displayGrade();
 
 }
 
@@ -174,6 +189,7 @@ document.getElementById("msg9").innerHTML="Congratulation! Correct Answer"; scor
 
 document.getElementById("score"). innerHTML=score;}
 
+displayGrade();
 
 }
 
@@ -193,6 +209,7 @@ document.getElementById("msg10").innerHTML="Congratulation! Correct Answer"; sco
 
 document.getElementById("score"). innerHTML=score;}
 
+displayGrade();
 
 }
 
@@ -212,6 +229,7 @@ document.getElementById("msg11").innerHTML="Congratulation! Correct Answer"; sco
 
 document.getElementById("score"). innerHTML=score;}
 
+displayGrade();
 
 }
 
@@ -231,6 +249,7 @@ document.getElementById("msg12").innerHTML="Congratulation! Correct Answer"; sco
 
 document.getElementById("score"). innerHTML=score;}
 
+displayGrade();
 
 }
 
@@ -250,6 +269,7 @@ document.getElementById("msg13").innerHTML="Congratulation! Correct Answer"; sco
 
 document.getElementById("score"). innerHTML=score;}
 
+displayGrade();
 
 }
 
@@ -269,6 +289,7 @@ document.getElementById("msg14").innerHTML="Congratulation! Correct Answer"; sco
 
 document.getElementById("score"). innerHTML=score;}
 
+displayGrade();
 
 }
 
@@ -288,6 +309,7 @@ document.getElementById("msg15").innerHTML="Congratulation! Correct Answer"; sco
 
 document.getElementById("score"). innerHTML=score;}
 
+displayGrade();
 
 }
 
@@ -307,6 +329,7 @@ document.getElementById("msg16").innerHTML="Congratulation! Correct Answer"; sco
 
 document.getElementById("score"). innerHTML=score;}
 
+displayGrade();
 
 }
 
@@ -326,6 +349,8 @@ document.getElementById("msg17").innerHTML="Congratulation! Correct Answer"; sco
 
 document.getElementById("score"). innerHTML=score;}
 
+displayGrade();
+
 }
 
 function check18 () {
@@ -344,6 +369,7 @@ document.getElementById("msg18").innerHTML="Congratulation! Correct Answer"; sco
 
 document.getElementById("score"). innerHTML=score;}
 
+displayGrade();
 
 }
 
@@ -363,6 +389,7 @@ document.getElementById("msg19").innerHTML="Congratulation! Correct Answer"; sco
 
 document.getElementById("score"). innerHTML=score;}
 
+displayGrade();
 
 }
 
@@ -382,6 +409,7 @@ document.getElementById("msg20").innerHTML="Congratulation! Correct Answer"; sco
 
 document.getElementById("score"). innerHTML=score;}
 
+displayGrade();
 
 }
 
@@ -391,10 +419,26 @@ function fname(){
     document.getElementById('ffname').innerText=a;
 }
 
+function displayGrade() {
+  const totalQuestions = 20;
+  const percentage = (score / totalQuestions) * 100;
 
+  if (percentage < 60) {
+    document.getElementById("grade").innerHTML = "Your grade: Emerging";
+  } else if (percentage < 70) {
+    document.getElementById("grade").innerHTML = "Your grade: Developing";
+  } else if (percentage < 80) {
+    document.getElementById("grade").innerHTML = "Your grade: Proficient";
+  } else if (percentage < 95) {
+    document.getElementById("grade").innerHTML = "Your grade: Extending";
+  } else {
+    document.getElementById("grade").innerHTML = "Your grade: Exceptional";
+  }
+}
 
 </script>
 
+<div class="body">
 <body>
 
 <h1> HTML and CSS Quiz</h1> <br>
@@ -411,13 +455,11 @@ function fname(){
 
 1. What does HTML stamd for? <br>
 
-<input type="radio" name="Q1" id="a1" value="t">HotMail<br> 
+<input type="radio" name="Q1" id="a1" value="t">Hyper Tool Markup Language<br> 
 
 <input type="radio" name="Q1" id="b1" value="v">How to Make Lasagna<br>
 
 <input type="radio" name="Q1" id="c1" value="o">Hyper Text Markup Language<br>
-
-<input type="button" value="submit" onclick="check1()">
 
 <label id="msg1"></label><br>
 
@@ -432,8 +474,6 @@ function fname(){
 
 <input type="radio" name="Q2" id="c2">There is no difference.<br> 
 
-<input type="button" value="submit" onclick="check2()">
-
 <label id="msg2"></label><br>
 
 <br>
@@ -446,8 +486,6 @@ function fname(){
 <input type="radio" name="Q3" id="b3">One<br> 
 
 <input type="radio" name="Q3" id="c3">Three<br> 
-
-<input type="button" value="submit" onclick="check3()">
 
 <label id="msg3"></label><br>
 
@@ -462,8 +500,6 @@ function fname(){
 
 <input type="radio" name="Q4" id="c4">An opening tag<br> 
 
-<input type="button" value="submit" onclick="check4()">
-
 <label id="msg4"></label><br>
 
 <br>
@@ -476,8 +512,6 @@ function fname(){
 <input type="radio" name="Q5" id="b5">Closing Tag<br> 
 
 <input type="radio" name="Q5" id="c5">Neither<br> 
-
-<input type="button" value="submit" onclick="check5()">
 
 <label id="msg5"></label><br>
 
@@ -492,8 +526,6 @@ function fname(){
 
 <input type="radio" name="Q6" id="c6">Neither<br> 
 
-<input type="button" value="submit" onclick="check6()">
-
 <label id="msg6"></label><br>
 
 <br>
@@ -506,8 +538,6 @@ function fname(){
 <input type="radio" name="Q7" id="b7">Any page<br> 
 
 <input type="radio" name="Q7" id="c7">The second page<br> 
-
-<input type="button" value="submit" onclick="check7()">
 
 <label id="msg7"></label><br>
 
@@ -522,8 +552,6 @@ function fname(){
 
 <input type="radio" name="Q8" id="c8"> < img src="image.jpg/gif" alt="type some text" ><br> 
 
-<input type="button" value="submit" onclick="check8()">
-
 <label id="msg8"></label><br>
 
 <br>
@@ -536,8 +564,6 @@ function fname(){
 <input type="radio" name="Q9" id="b9">Empty element<br> 
 
 <input type="radio" name="Q9" id="c9">Closed element<br> 
-
-<input type="button" value="submit" onclick="check9()">
 
 <label id="msg9"></label><br>
 
@@ -552,8 +578,6 @@ function fname(){
 
 <input type="radio" name="Q10" id="c10"> / img<br> 
 
-<input type="button" value="submit" onclick="check10()">
-
 <label id="msg10"></label><br>
 
 <br>
@@ -566,8 +590,6 @@ function fname(){
 <input type="radio" name="Q11" id="b11">Commas<br> 
 
 <input type="radio" name="Q11" id="c11">Parenthesis<br> 
-
-<input type="button" value="submit" onclick="check11()">
 
 <label id="msg11"></label><br>
 
@@ -582,8 +604,6 @@ function fname(){
 
 <input type="radio" name="Q12" id="c12">In different folders<br> 
 
-<input type="button" value="submit" onclick="check12()">
-
 <label id="msg12"></label><br>
 
 <br>
@@ -597,8 +617,6 @@ function fname(){
 <input type="radio" name="Q13" id="b13">Adds a search engine to the page<br> 
 
 <input type="radio" name="Q13" id="c13">Nothing<br> 
-
-<input type="button" value="submit" onclick="check13()">
 
 <label id="msg13"></label><br>
 
@@ -615,8 +633,6 @@ function fname(){
 
 <input type="radio" name="Q14" id="c14">Table of Contents<br> 
 
-<input type="button" value="submit" onclick="check14()">
-
 <label id="msg14"></label><br>
 
 <br>
@@ -630,8 +646,6 @@ function fname(){
 
 <input type="radio" name="Q15" id="c15">Opens a new website<br> 
 
-<input type="button" value="submit" onclick="check15()">
-
 <label id="msg15"></label><br>
 
 <br>
@@ -644,8 +658,6 @@ function fname(){
 <input type="radio" name="Q16" id="b16">Computer Style Sheets<br> 
 
 <input type="radio" name="Q16" id="c16">Cascading Style Sheets<br> 
-
-<input type="button" value="submit" onclick="check16()">
 
 <label id="msg16"></label><br>
 
@@ -661,8 +673,6 @@ function fname(){
 
 <input type="radio" name="Q17" id="c17">  stylesheet>mystyle.css / stylesheet <br> 
 
-<input type="button" value="submit" onclick="check17()">
-
 <label id="msg17"></label><br>
 
 <br>
@@ -675,8 +685,6 @@ function fname(){
 <input type="radio" name="Q18" id="b18">In the  head  section  <br> 
 
 <input type="radio" name="Q18" id="c18">At the end of the document<br> 
-
-<input type="button" value="submit" onclick="check18()">
 
 <label id="msg18"></label><br>
 
@@ -691,8 +699,6 @@ function fname(){
 
 <input type="radio" name="Q19" id="c19">style<br> 
 
-<input type="button" value="submit" onclick="check19()">
-
 <label id="msg19"></label><br>
 
 <br>
@@ -705,8 +711,6 @@ function fname(){
 <input type="radio" name="Q20" id="b20">background-color<br> 
 
 <input type="radio" name="Q20" id="c20">bgcolor<br> 
-
-<input type="button" value="submit" onclick="check20()">
 
 <label id="msg20"></label><br>
 
@@ -722,13 +726,16 @@ function fname(){
 
 
 
-
+<input type="button" value="submit" onclick="check1(), check2(), check3(), check4(), check5(), check6(), check7(), check8(), check9(), check10(), check11(), check12(), check13(), check14(), check15(), check16(), check17(), check18(), check19(), check20()">
 
 <br>
+<br>
 <label id="ffname"></label>
-<label> 's Final Score is: </label >
-
+<label> 's Final Score is: </label>
+<label id="grade"></label>
 <label id="score"></label>
-
-</body> </html>
+<br>
+<br>
+</div>
+</body>
 </html>
