@@ -14,10 +14,10 @@
             Online Kids Mad Libs About Pizza Order
         </h1>
         <br>
-        Once upon a time, there was a <label id="person1">Person</label> who was feeling particularly <label id="adjective1">Adjective</label> one day. They decided to order from their favorite <label id="restaurant1">Restaurant</label>. After placing the order, they eagerly awaited the delivery of their delicious <label id="food1">Food</label>. AFter a/an <label id="time1"> Time </label> they felt <label id="feeling1"> Feeling </label>.
+        Once upon a time, there was a <label id="person1">Person</label> who was feeling particularly <label id="adjective1">Adjective</label> one day. They decided to order from their favorite <label id="restaurant1">Restaurant</label>. After placing the order, they eagerly awaited the delivery of their delicious <label id="food1">Food</label>. After a/an <label id="time1"> Time </label> they felt <label id="feeling1">Feeling</label>, so they decided to <label id=activity1>Activity</label>. After <label id="person1">They</label> decided to <label id="action1">Action</label>. 
         <br>
         <br>
-
+        </div>
         <div class="story1insert">
             Person
             <input id="s1person" type="text">
@@ -37,47 +37,118 @@
             Feeling
             <input id="s1feeling" type="text">
             <br>
-            Person
-            <input id="s1" type="text">
+            Action
+            <input id="s1activity" type="text">
             <br>
             Person
-            <input id="s1" type="text">
+            <input id="s1action" type="text">
+        <br>
+        <div class="submit">
+        <input type="submit" onclick="s1()" value="Generate Story">
+        </div>
+        </div>
+
+
+
+        <div class="story2">
+            <h1>
+                Online Kids Mad Libs About Pizza Order
+            </h1>
+            <br>
+             
+            <br>
             <br>
             </div>
-        </div>
-        <br>
-        <input type="submit" onclick="s1()">
+            <div class="story2insert">
+                
+                <input id="" type="text">
+                <br>
+                
+                <input id="" type="text">
+                <br>
+                
+                <input id="" type="text">
+                <br>
+
+                <input id="" type="text">
+                <br>
+
+                <input id="" type="text">
+                <br>
+                
+                <input id="" type="text">
+                <br>
+                
+                <input id="" type="text">
+                <br>
+                
+                <input id="" type="text">
+            <br>
+            <div class="submit">
+            <input type="submit" onclick="s1()" value="Generate Story">
+            </div>
+            </div>
     </body>
 
 
 
 <script>
-function s1(){
+function s1() {
+    let a;
 
-let a = document.getElementById('s1person').value;
-document.getElementById('person1').innerText=a;
+    a = document.getElementById('s1person').value;
+    document.getElementById('person1').innerText = a;
 
-let a = document.getElementById('s1adjective').value;
-document.getElementById('adjective1').innerText=a;
+    a = document.getElementById('s1adjective').value;
+    document.getElementById('adjective1').innerText = a;
 
-let a = document.getElementById('s1restaurant').value;
-document.getElementById('restaurant1').innerText=a;
+    a = document.getElementById('s1restaurant').value;
+    document.getElementById('restaurant1').innerText = a;
 
-let a = document.getElementById('s1food').value;
-document.getElementById('food1').innerText=a;
+    a = document.getElementById('s1food').value;
+    document.getElementById('food1').innerText = a;
 
-let a = document.getElementById('s1time').value;
-document.getElementById('time1').innerText=a;
+    a = document.getElementById('s1time').value;
+    document.getElementById('time1').innerText = a;
 
-let a = document.getElementById('s1feeling').value;
-document.getElementById('feeling1').innerText=a;
+    a = document.getElementById('s1feeling').value;
+    document.getElementById('feeling1').innerText = a;
 
-let a = document.getElementById('').value;
-document.getElementById('').innerText=a;
+    a = document.getElementById('s1acivity').value;
+    document.getElementById('activity1').innerText = a;
 
-let a = document.getElementById('').value;
-document.getElementById('').innerText=a;
+    a = document.getElementById('s1action').value;
+    document.getElementById('action1').innerText = a;
 }
+
+function s2() {
+    let a;
+
+    a = document.getElementById('').value;
+    document.getElementById('').innerText = a;
+
+    a = document.getElementById('').value;
+    document.getElementById('').innerText = a;
+
+    a = document.getElementById('').value;
+    document.getElementById('').innerText = a;
+
+    a = document.getElementById('').value;
+    document.getElementById('').innerText = a;
+
+    a = document.getElementById('').value;
+    document.getElementById('').innerText = a;
+
+    a = document.getElementById('').value;
+    document.getElementById('').innerText = a;
+
+    a = document.getElementById('').value;
+    document.getElementById('').innerText = a;
+
+    a = document.getElementById('').value;
+    document.getElementById('').innerText = a;
+}
+
 </script>
 
 <style>
@@ -91,5 +162,35 @@ body{
     background: #000034;
     padding: 30px;
 }
+
+.story1insert{
+    margin: auto;
+    padding: 5px 40% 5px 40%;
+}
+
+.submit{
+    margin: auto;
+    padding: 5px 40% 5px 40%;
+}
+
+.story1{
+    text-align: center;
+    padding: 5px 40% 5px 40%;
+    width: 5px 40% 5px 40%;
+}
+
+
+
+.story2insert{
+    margin: auto;
+    padding: 5px 40% 5px 40%;
+}
+
+.story2{
+    text-align: center;
+    padding: 5px 40% 5px 40%;
+    width: 5px 40% 5px 40%;
+}
+
 </style>
 </html>
