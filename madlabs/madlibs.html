@@ -52,37 +52,32 @@
 
         <div class="story2">
             <h1>
-                Online Kids Mad Libs About Pizza Order
+                Online Kids Mad Libs About Buying a veichle
             </h1>
             <br>
-             
+            After <label id="months2">months</label> of saving and research, <label id="person2">They</label> finally felt ready to purchase her first <label id="veichle2">veichle</label>. <label id="pronoun2">pronoun</label> visited several dealerships, test-driving various models and negotiating prices. One particular <label id="veichlemodel2">model</label> caught her <label id="pronoun2">pronoun</label> with its sleek design with its <label id="color2">color</label> and impressive fuel efficiency. Despite the salesperson's persistent efforts, <label id="person2">Them</label> remained firm in her budget and haggled until they reached a fair deal. With a mixture of excitement and trepidation, she signed the paperwork and drove off the lot, her new set of wheels glistening in the sunlight. The freedom of having her own transportation filled <label id="person2">Them</label> with a sense of independence and endless possibilities.
             <br>
             <br>
             </div>
             <div class="story2insert">
-                
-                <input id="" type="text">
+                Number of months (include the word months after)
+                <input id="s2months" type="text">
                 <br>
                 
-                <input id="" type="text">
+                <input id="s2person" type="text">
                 <br>
                 
-                <input id="" type="text">
+                <input id="s2veichle" type="text">
                 <br>
 
-                <input id="" type="text">
+                <input id="s2pronoun" type="text">
                 <br>
 
-                <input id="" type="text">
+                <input id="s2veichlemodel" type="text">
                 <br>
                 
-                <input id="" type="text">
+                <input id="s2color" type="text">
                 <br>
-                
-                <input id="" type="text">
-                <br>
-                
-                <input id="" type="text">
             <br>
             <div class="submit">
             <input type="submit" onclick="s1()" value="Generate Story">
@@ -124,29 +119,23 @@ function s1() {
 function s2() {
     let a;
 
-    a = document.getElementById('').value;
-    document.getElementById('').innerText = a;
+    a = document.getElementById('s2months').value;
+    document.getElementById('months2').innerText = a;
 
-    a = document.getElementById('').value;
-    document.getElementById('').innerText = a;
+    a = document.getElementById('s2person').value;
+    document.getElementById('person2').innerText = a;
 
-    a = document.getElementById('').value;
-    document.getElementById('').innerText = a;
+    a = document.getElementById('s2veichle').value;
+    document.getElementById('veichle2').innerText = a;
 
-    a = document.getElementById('').value;
-    document.getElementById('').innerText = a;
+    a = document.getElementById('s2pronoun').value;
+    document.getElementById('pronoun2').innerText = a;
 
-    a = document.getElementById('').value;
-    document.getElementById('').innerText = a;
+    a = document.getElementById('s2veichlemodel').value;
+    document.getElementById('veichlemodel2').innerText = a;
 
-    a = document.getElementById('').value;
-    document.getElementById('').innerText = a;
-
-    a = document.getElementById('').value;
-    document.getElementById('').innerText = a;
-
-    a = document.getElementById('').value;
-    document.getElementById('').innerText = a;
+    a = document.getElementById('s2color').value;
+    document.getElementById('color2').innerText = a;
 }
 
 </script>
@@ -173,23 +162,9 @@ body{
     padding: 5px 40% 5px 40%;
 }
 
-.story1{
-    text-align: center;
-    padding: 5px 40% 5px 40%;
-    width: 5px 40% 5px 40%;
-}
-
-
-
 .story2insert{
     margin: auto;
     padding: 5px 40% 5px 40%;
-}
-
-.story2{
-    text-align: center;
-    padding: 5px 40% 5px 40%;
-    width: 5px 40% 5px 40%;
 }
 
 </style>
