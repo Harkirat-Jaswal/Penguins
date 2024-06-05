@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <title>
+            Changing style sheet
+        </title>
+        <script>
+            function forSummer(){
+                document.getElementById("change").setAttribute("href", "summer.css");
+            }
+            function forWinter(){
+                document.getElementById("change").setAttribute("href", "winter.css");
+            }
+        </script>
+        <link id="change" rel="stylesheet" href="default.css">
+    </head>
+
+    <body>
+        We Will Change The Style Sheet As Per The Button.
+        <button type="button" onclick="forSummer()"> Summer </button>
+        <button type="button" onclick="forWinter()"> Winter </button>
+    </body>
+</html>

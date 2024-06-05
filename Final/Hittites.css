@@ -1,0 +1,47 @@
+.nav ul
+{
+list-style-type: none;
+background-color: #cc0099;
+margin: -8px;
+overflow: hidden;
+border: groove black 8px;
+}
+
+.nav a
+{
+color: white;
+text-decoration: none;
+padding: 15px;
+display: block;
+text-align: center;
+}
+
+.nav a:hover
+{
+background-color: #cc00ff;
+}
+
+.nav li
+{
+float: left;
+}
+
+.head
+{
+font-size: 20px;
+display: inline-block;
+}
+
+
+.text
+{
+margin: 0px 0px 0px 60px;
+display: inline-block;
+}
+
+.logo
+{
+width: 20%;
+display: inline-block;
+vertical-align: middle;
+}

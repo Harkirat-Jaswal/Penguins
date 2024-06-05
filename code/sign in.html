@@ -1,0 +1,128 @@
+<html>
+    <head>
+        <title>
+            Sign In
+        </title>
+        
+        <script>
+            function Msg() {
+                const input_name=document.getElementById('Name');
+                const n=input_name.value;
+                const mssg=n.concat('You Have Been Succesfully Registered');
+                document.getElementById('showMsg').innerHTML=mssg;
+            }
+        </script>
+
+    <style>
+        .txtIn{
+            color: lightgrey;
+        }
+        .forForm{
+            background-color: lightgrey;
+            margin: 50px auto;
+            border:2px solid black;
+            width:300px;
+            padding: 10px;
+            border-radius: 4px;
+        }
+        h2{
+            text-align: center;
+        }
+        body{
+            background-color: darkgrey;
+        }
+        label{
+            font-size: 20px;
+        }
+    </style>
+    </head>
+
+    <body>
+        <div class="forForm">
+            <h2>
+                REGISTRATION FORM
+            </h2>
+            <form>
+                <label> Enter Your Name</label>
+                <br>
+                <input placeholder="Enter Name" class="txtIn" id="Name">
+                <br>
+                <label>
+                    Username:
+                </label>
+                <br>
+                <input placeholder="Enter Username" class="txtIn">
+                <br>
+                <label>
+                    Password:
+                </label>
+                <br>
+                <input type="Password" value="Enter Password" class="txtIn">
+                <br>
+
+                <label>
+                    Select One Opition:
+                </label>
+                <br>
+                <label>
+                    I Have A Bike
+                </label>
+                <br>
+                <input type="Radio" name="travel">
+                <br><label>
+                    I Have A Car
+                </label>
+                <br>
+                <input type="Radio" name="travel">
+                <br><label>
+                    I Have A Boat
+                </label>
+                <br>
+                <input type="Radio" name="travel">
+                <br>
+
+                <br>
+                <label>
+                    When Will You Travel:
+                </label>
+                <select>
+                    <option value="None"></option>
+                    <option value="Monday">
+                        Monday
+                    </option>
+                    <option value="Tuesday">
+                        Tuesday
+                    </option>
+                    <option value="Wednesday">
+                        Wednesday
+                    </option>
+                    <option value="Thursday">
+                        Thursday
+                    </option>
+                    <option value="Friday">
+                        Friday
+                    </option>
+                    <option value="Saturday">
+                        Saturday
+                    </option>
+                    <option value="Sunday">
+                        Sunday
+                    </option>
+                </select>
+
+                <br>
+                <input type="checkbox">
+                <label>
+                    I Agree With Terms and Services.
+                </label>
+                <br>
+
+                <br>
+                <input type="Reset" value="Reset">
+                <input type="button" value="Submit" onclick="Msg()">
+                </form>
+                <p id="showMsg">
+                </p>
+        </div>
+    </body>
+</html>

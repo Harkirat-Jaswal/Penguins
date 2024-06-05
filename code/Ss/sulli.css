@@ -1,0 +1,81 @@
+body {
+background-color: #;
+margin: 0px;
+padding: 0px;
+}
+
+.hcolor
+{
+background-color: #0D3D7D;
+padding: 10px;
+}
+
+.head
+{
+font-size: 20px;
+display: inline-block;
+align-content: center;
+}
+
+.text
+{
+margin: 0px 0px 0px 25px;
+display: inline-block;
+text-shadow: 2px 2px 5px black;
+}
+
+.logo
+{
+width: 20%;
+display: inline-block;
+vertical-align: middle;
+border-radius: 200px;
+}
+
+.body
+{
+margin: auto;
+width: 500px;
+}
+
+.sidenav
+{
+width: 120px;
+position: absolute;
+}
+
+.navoption
+{
+display: flex;
+background-color: 0D3D7D;
+}
+
+.navoption:hover
+{
+background-color: #2F578C;
+}
+
+a
+{
+text-decoration: none;
+color: white;
+}
+
+.navtext
+{
+text-shadow: 2px 2px 5px black;
+color: White;
+}
+
+.bold
+{
+font-weight: bold;
+}
+
+
+
+
+
+
+
+

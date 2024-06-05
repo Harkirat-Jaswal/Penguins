@@ -1,0 +1,126 @@
+<html>
+    <head>
+        <title>
+            Calculator
+        </title>
+    </head>
+
+    <link rel="stylesheet" href="caculator.css">
+
+    <script>
+
+function findSum(){
+
+var num1=parseFloat(document.getElementById("n1").value);
+
+var num2=parseFloat(document.getElementById("n2").value);
+
+var num3=num1 + num2;
+
+if (isNaN(num3)) {
+    document.getElementById("ans").innerHTML="Nuh Uh";
+} else {
+    document.getElementById("ans").innerHTML=num3;
+}
+}
+
+function findSum2(){
+
+var num1=parseFloat(document.getElementById("n1").value);
+
+var num2=parseFloat(document.getElementById("n2").value);
+
+var num3=num1 - num2;
+
+if (isNaN(num3)) {
+    document.getElementById("ans").innerHTML="Nuh Uh";
+} else {
+    document.getElementById("ans").innerHTML=num3;
+}
+}
+
+function findSum3(){
+
+var num1=parseFloat(document.getElementById("n1").value);
+
+var num2=parseFloat(document.getElementById("n2").value);
+
+var num3=num1 * num2;
+
+if (isNaN(num3)) {
+    document.getElementById("ans").innerHTML="Nuh Uh";
+} else {
+    document.getElementById("ans").innerHTML=num3;
+}
+}
+
+function findSum4(){
+
+var num1=parseFloat(document.getElementById("n1").value);
+
+var num2=parseFloat(document.getElementById("n2").value);
+
+var num3=num1/num2;
+
+if (isNaN(num3)) {
+    document.getElementById("ans").innerHTML="Nuh Uh";
+} else {
+    document.getElementById("ans").innerHTML=num3;
+}
+
+
+}
+
+function findSum5(){
+
+document.getElementById("ans").innerHTML="";
+}
+
+</script>
+<body>
+
+<div class="body">
+
+<h1>
+Calculator
+</h1>
+
+Enter first number:
+<input type="number" id="n1"><br><br>
+
+Enter second number:
+<input type="number" id="n2"><br><br>
+
+<input type="button" value="Add" onclick="findSum()">
+
+<input type="button" value="Subtract" onclick="findSum2()">
+
+<input type="button" value="Multiply" onclick="findSum3()">
+
+<input type="button" value="Divide" onclick="findSum4()">
+
+<input type="button" value="Clear" onclick="findSum5()">
+
+<br>
+<label> Answer: </label>
+<label id="ans"></label>
+</div>
+
+<div class="empty">
+
+</div>
+
+<div class="grass">
+    <img src="b.png">
+    <img src="bas.png">
+    <img src="se.png" style="margin: 0px 0px 0px 150px;">
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+</div>
+
+</body>
+</html>
+
+
+
+    </body>
+</html>

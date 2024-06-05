@@ -1,0 +1,35 @@
+.inputtxt
+{
+border: 5px solid lightblue;
+border-radius: 7px;
+}
+
+.buttons
+{
+border: 2px solid black;
+border-radius: 4px;
+color: red;
+font-size: 20px;
+}
+
+.body
+{
+margin: auto;
+width: 500px;
+}
+
+body
+{
+background-image: url("earthdaylogo.jpg");
+background-repeat: no-repeat;
+background-size: cover;
+}
+
+.whole
+{
+color: white;
+margin: auto;
+width: 500px;
+background-color: green;
+padding: 10px;
+}

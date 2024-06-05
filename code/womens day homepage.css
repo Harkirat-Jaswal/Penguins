@@ -1,0 +1,131 @@
+body {background-color: #cc00ff;}
+
+.head
+{
+font-size: 20px;
+display: inline-block;
+}
+
+
+.text
+{
+margin: 0px 0px 0px 60px;
+display: inline-block;
+}
+
+.logo
+{
+width: 20%;
+display: inline-block;
+vertical-align: middle;
+}
+
+.homepageimg
+{
+border-radius: 20px;
+display: block;
+margin: -30px auto;
+width: 30%;
+}
+
+.homepagebody
+{
+width: 275px;
+color: white;
+text-align: center;
+margin: 50px auto;
+}
+
+.nav ul
+{
+list-style-type: none;
+background-color: #cc0099;
+margin: -8px;
+overflow: hidden;
+border: groove black 8px;
+}
+
+.nav a
+{
+color: white;
+text-decoration: none;
+padding: 15px;
+display: block;
+text-align: center;
+}
+
+.nav a:hover
+{
+background-color: #cc00ff;
+}
+
+.nav li
+{
+float: left;
+}
+
+
+.adabody
+{
+width: 275px;
+color: white;
+text-align: center;
+margin: 50px auto;
+}
+
+.adaimg
+{
+border-radius: 20px;
+display: block;
+margin: -30px auto;
+width: 20%;
+}
+
+.mariebody
+{
+width: 275px;
+color: white;
+text-align: center;
+margin: 50px auto;
+}
+
+.marieimg
+{
+border-radius: 20px;
+display: block;
+margin: -30px auto;
+width: 20%;
+}
+
+.ameliabody
+{
+width: 275px;
+color: white;
+text-align: center;
+margin: 50px auto;
+}
+
+.ameliaimg
+{
+border-radius: 20px;
+display: block;
+margin: -30px auto;
+width: 20%;
+}
+
+
+.srcbody
+{
+width: 275px;
+color: white;
+text-align: center;
+margin: 50px auto;
+}
+
+.srcimg
+{
+border-radius: 20px;
+display: block;
+margin: -30px auto;
+width: 30%;
+}
