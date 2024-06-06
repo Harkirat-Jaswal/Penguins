@@ -1,7 +1,12 @@
+body{
+    margin: 0%;
+}
+
+
 .nav ul
 {
 list-style-type: none;
-background-color: #cc0099;
+background-color: #beb06d;
 margin: -8px;
 overflow: hidden;
 border: groove black 8px;
@@ -18,7 +23,7 @@ text-align: center;
 
 .nav a:hover
 {
-background-color: #cc00ff;
+background-color: #bda951;
 }
 
 .nav li
@@ -29,19 +34,20 @@ float: left;
 .head
 {
 font-size: 20px;
-display: inline-block;
+display: flex;
+align-items: center;
 }
 
 
 .text
 {
-margin: 0px 0px 0px 60px;
 display: inline-block;
+vertical-align: middle;
 }
 
 .logo
 {
-width: 20%;
-display: inline-block;
-vertical-align: middle;
+margin-right: 20px;
+width: 7%;
+padding: 15px;
 }
