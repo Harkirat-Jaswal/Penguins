@@ -10,7 +10,7 @@ list-style-type: none;
 background-color: #5f2f2d;
 margin: -8px;
 overflow: hidden;
-border: groove #c4a570 6px;
+margin-left: 20px;
 }
 
 .nav a
@@ -33,7 +33,7 @@ box-shadow: 2px 2px 6px #6b3330;
 .nav li
 {
 float: left;
-margin-left: 35px;
+margin-right: 35px;
 }
 
 .head
@@ -43,7 +43,6 @@ display: flex;
 align-items: center;
 }
 
-
 .text
 {
 display: inline-block;
@@ -52,11 +51,10 @@ color: #c4a570;
 text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
 }
 
-
 .logo
 {
 margin-right: 20px;
-width: 7%;
+width: 150px;
 padding: 15px;
 }
 
@@ -66,13 +64,30 @@ padding: 15px;
     left: 0;
     width: 100%;
     background-color: #5f2f2d;
+    border-bottom: groove #c4a570 6px;
   }
   
-  .body{
-    margin-top: 250px;
-    margin-left: 100px;
-    margin-right: 100px;
-    color: #c4a570;
+.body{
+  margin: 250px 10% 10%;
+  color: #c4a570;
   }
+
+.wikipedia-link {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+    font-style: italic;
+    color: #c4a570;
+}
+
+.wikipedia-link a {
+    color: #c4a570;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.wikipedia-link a:hover {
+    color: #a38a5c;
+}
 
 
