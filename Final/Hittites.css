@@ -75,9 +75,9 @@ padding: 15px;
   color: #c4a570;
   }
 
-.hero {
+.hook {
     height: 500px;
-    background-image: url('bgh.jpg');
+    background: linear-gradient(to bottom, rgba(99, 85, 85, 0.5), rgba(0, 0, 0, 0.5)), url('bgh.jpg');
     background-size: cover;
     background-position: center;
     display: flex;
@@ -86,20 +86,24 @@ padding: 15px;
     text-align: center;
     color: #5f2f2d;
     border-radius: 70px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border: 10px solid #5f2f2d;
+    outline: 5px solid #c4a570;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
 }
 
-.hero-content {
+.hook-content {
     max-width: 800px;
 }
 
-.hero h1 {
+.hook h1 {
     font-size: 48px;
     margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
-.hero p {
+.hook p {
     font-size: 20px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
 }
 
 
