@@ -4,6 +4,7 @@ body{
 }
 
 
+
 .nav ul
 {
 list-style-type: none;
@@ -33,7 +34,7 @@ box-shadow: 2px 2px 6px #6b3330;
 .nav li
 {
 float: left;
-margin-right: 35px;
+margin-right: 10px;
 }
 
 .head
@@ -49,6 +50,7 @@ display: inline-block;
 vertical-align: middle;
 color: #c4a570;
 text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+margin-right: 10px;
 }
 
 .logo
@@ -65,12 +67,41 @@ padding: 15px;
     width: 100%;
     background-color: #5f2f2d;
     border-bottom: groove #c4a570 6px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   }
   
 .body{
   margin: 250px 10% 10%;
   color: #c4a570;
   }
+
+.hero {
+    height: 500px;
+    background-image: url('bgh.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #5f2f2d;
+    border-radius: 70px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.hero-content {
+    max-width: 800px;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 20px;
+}
+
 
 .wikipedia-link {
     display: block;
