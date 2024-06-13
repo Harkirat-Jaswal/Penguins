@@ -163,3 +163,7 @@ padding: 15px;
     outline: 5px solid #c4a570;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
 }
+
+.vid{
+    margin: 175px auto;
+}
