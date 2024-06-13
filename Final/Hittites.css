@@ -131,3 +131,19 @@ padding: 15px;
 .emp{
     text-indent: 20px;
 }
+
+.hookr {
+    height: 500px;
+    background: linear-gradient(to bottom, rgba(88, 82, 82, 0.37), rgba(0, 0, 0, 0.747)), url('bgh.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #c4a570;
+    border-radius: 70px;
+    border: 7px solid #5f2f2d;
+    outline: 5px solid #c4a570;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
