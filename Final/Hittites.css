@@ -76,11 +76,12 @@ padding: 15px;
 .body{
   margin: 250px 10% 10%;
   color: #c4a570;
+  font-size: larger;
   }
 
 .hook {
     height: 500px;
-    background: linear-gradient(to bottom, rgba(88, 82, 82, 0.37), rgba(0, 0, 0, 0.747)), url('bgh.jpg');
+    background: linear-gradient(to bottom, rgba(88, 82, 82, 0.37), rgba(0, 0, 0, 0.747)), url('bghh.mp4');
     background-size: cover;
     background-position: center;
     display: flex;
@@ -134,7 +135,7 @@ padding: 15px;
 
 .hookr {
     height: 500px;
-    background: linear-gradient(to bottom, rgba(88, 82, 82, 0.37), rgba(0, 0, 0, 0.747)), url('bghr.jpg');
+    background: linear-gradient(to bottom, rgba(88, 82, 82, 0.37), rgba(0, 0, 0, 0.747)), url('bghr.mp4');
     background-size: cover;
     background-position: center;
     display: flex;
@@ -150,7 +151,7 @@ padding: 15px;
 
 .hookl {
     height: 500px;
-    background: linear-gradient(to bottom, rgba(88, 82, 82, 0.37), rgba(0, 0, 0, 0.747)), url('bghl.jpg');
+    background: linear-gradient(to bottom, rgba(88, 82, 82, 0.37), rgba(0, 0, 0, 0.747)), url('bghl.mp4');
     background-size: cover;
     background-position: center;
     display: flex;
@@ -170,4 +171,17 @@ padding: 15px;
   height: 100%;
   z-index: -1;
   object-fit: cover;
+}
+
+.video-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    color: #5f2f2d;
+    text-align: center;
+    font-size: 30px;
+    text-shadow: -1px -1px 0 #c4a570, 1px -1px 0 #c4a570, -1px 1px 0 #c4a570, 1px 1px 0 #c4a570;
+    box-shadow: 0 0 20px #c4a570;
 }
