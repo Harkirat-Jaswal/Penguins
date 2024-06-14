@@ -154,3 +154,10 @@ padding: 15px;
     box-shadow: 0 0 20px #c4a570;
 }
 
+.hook video {
+    position: absolute;
+    width: inherit;
+    height: inherit;
+    object-fit: cover;
+    z-index: -1;
+}
