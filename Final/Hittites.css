@@ -5,41 +5,41 @@ body{
 
 .nav ul
 {
-list-style-type: none;
-background-color: #5f2f2d;
-margin: -8px;
-overflow: hidden;
-margin-left: 20px;
+    list-style-type: none;
+    background-color: #5f2f2d;
+    margin: -8px;
+    overflow: hidden;
+    margin-left: 20px;
 }
 
 .nav a
 {
-color: #c4a570;
-text-decoration: none;
-padding: 15px;
-display: block;
-text-align: center;
+    color: #c4a570;
+    text-decoration: none;
+    padding: 15px;
+    display: block;
+    text-align: center;
 }
 
 .nav a:hover
 {
-background-color: #552a2a;
-border-radius: 35px;
-transition: 0.8s;
-box-shadow: 2px 2px 6px #6b3330;
+    background-color: #552a2a;
+    border-radius: 35px;
+    transition: 0.8s;
+    box-shadow: 2px 2px 6px #6b3330;
 }
 
 .nav li
 {
-float: left;
-margin-right: 10px;
+    float: left;
+    margin-right: 10px;
 }
 
 .head
 {
-font-size: 20px;
-display: flex;
-align-items: center;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
 }
 
 .HE{
@@ -49,18 +49,18 @@ align-items: center;
 
 .text
 {
-display: inline-block;
-vertical-align: middle;
-color: #c4a570;
-text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
-margin-right: 10px;
+    display: inline-block;
+    vertical-align: middle;
+    color: #c4a570;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    margin-right: 10px;
 }
 
 .logo
 {
-margin-right: 20px;
-width: 150px;
-padding: 15px;
+    margin-right: 20px;
+    width: 150px;
+    padding: 15px;
 }
 
 .top {
@@ -71,13 +71,14 @@ padding: 15px;
     background-color: #5f2f2d;
     border-bottom: groove #c4a570 6px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  }
-  
+    z-index: 2;
+}
+
 .body{
-  margin: 250px 10% 10%;
-  color: #c4a570;
-  font-size: larger;
-  }
+    margin: 250px 10% 10%;
+    color: #c4a570;
+    font-size: larger;
+}
 
 .hook {
     height: 500px;
@@ -146,11 +147,10 @@ padding: 15px;
 }
 
 .vid{
-  position: fixed;
-  width: 100%;
-  height: 100%;
-  z-index: -1;
-  object-fit: cover;
+  width: 20%;
+  display: inline-block;
+  vertical-align: middle;
+  padding-top: 10px;
 }
 
 .video-overlay {
@@ -159,10 +159,12 @@ padding: 15px;
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 1;
-    color: #5f2f2d;
-    text-align: center;
-    font-size: 30px;
-    text-shadow: -1px -1px 0 #c4a570, 1px -1px 0 #c4a570, -1px 1px 0 #c4a570, 1px 1px 0 #c4a570;
-    box-shadow: 0 0 20px #c4a570;
+    color: #c8d363b7;
+    text-shadow: 3px 3px 5px rgb(0, 0, 0);
+    font-weight: bold;
 }
 
+.nav li {
+    float: left;
+    font-weight: 100;
+}
