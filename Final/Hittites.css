@@ -163,8 +163,11 @@ body{
     transform: translate(-50%, -50%);
     z-index: 1;
     color: #c8d363b7;
-    text-shadow: 3px 3px 5px rgb(0, 0, 0);
+    text-shadow: 2px 2px 5px rgb(0, 0, 0);
     font-weight: bold;
+    backdrop-filter: blur(3px) brightness(80%);
+    padding: 9px;
+    border-radius: 20px;
 }
 
 .nav li {
