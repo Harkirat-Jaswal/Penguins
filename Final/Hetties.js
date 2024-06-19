@@ -11,8 +11,10 @@ navMenu.addEventListener('click', (event) => {
 const videoPlayer = document.getElementById('videoPlayer');
 
 function changeVideo(videoSrc) {
-    const videoSource = videoPlayer.querySelector('source');
-    videoSource.src = videoSrc;
-    videoPlayer.load();
+  const videoPlayer = document.getElementById('videoPlayer');
+  videoPlayer.src = videoSrc;
+  videoPlayer.currentTime = 0;
+  videoPlayer.load();
 }
+
 
