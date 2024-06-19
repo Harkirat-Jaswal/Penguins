@@ -92,7 +92,7 @@ body{
     text-align: center;
     color: #c4a570;
     border: 7px solid #5f2f2d;
-    outline: 5px solid #c4a570;
+    outline: 6px groove #c4a570;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
     overflow: hidden;
     position: relative;
@@ -173,4 +173,34 @@ body{
 .nav li {
     float: left;
     font-weight: 100;
+}
+
+.video-container {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px;
+    background-color: #5f2f2d;
+    border: 4px solid #c4a570;
+}
+
+.video-buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.video-buttons button {
+    margin: 0 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #c4a570;
+    color: #5f2f2d;
+    border: none;
+    border-radius: 5px;
+}
+
+.video-buttons button:hover {
+    background-color: #a38a5c;
+    transition: ease 0.8s;
 }
